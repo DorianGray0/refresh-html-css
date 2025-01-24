@@ -77,6 +77,15 @@ img {
   text-decoration: none;
 }
 
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  cursor: pointer;
+}
+
 /* .navigation-link.current {
   position: relative;
   color: var(--pressed-state-color);
@@ -96,14 +105,7 @@ img {
 }
 
 
-.btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
 
-  cursor: pointer;
-}
 
 .text {
   line-height: 1.5;
@@ -134,11 +136,29 @@ img {
 /* ------------------------------HEADER */
 
 .header {
+  border-bottom: 1px solid #e7e9fc;
+
+  background: #fff;
 }
+
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header-nav {
+  display: flex;
+  align-items: center;
+
+  gap: 76px;
 }
 
 .header-logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 23px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -153,10 +173,18 @@ img {
 }
 
 .header-nav-list {
+  display: flex;
+  gap: 40px;
 }
+
 .header-nav-item {
 }
+
 .header-nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 23px;
+
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -164,10 +192,17 @@ img {
 }
 
 .header-contact-list {
+  display: flex;
+  gap: 40px;
 }
+
 .header-contact-item {
 }
 .header-contact-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 23px;
+
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -176,23 +211,68 @@ img {
 /* ---------SECTION 1 HERO ---------- */
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  min-height: 600px;
+  /* text-align: center; */
+  background-color: var(--first-bgc);
 }
+
 .hero-title {
+  max-width: 496px;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--secondary-title-color);
 }
+
 .hero-btn {
+  font-family: 'Roboto', sans-serif;
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--secondary-title-color);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: var(--accent-color);
+  border: none;
 }
 
 /* ------------------------SECTION 2 ABOUT */
 
 .about {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
 .about-list {
+  display: flex;
+  gap: 24px;
 }
 .about-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
+
 .about-title {
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
+
 .about-text {
+  line-height: 1.5;
+  letter-spacing: 0.019em;
+  color: #434455;
 }
 
 /* -----------------SECTION 3  TEAM  */
